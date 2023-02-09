@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cursojs</title>
+    <style>
+        body {
+            background-color: #ffae00;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>meu primeiro programa</h1>
+    <p>olá, mundo!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia natus eos, magni maiores ipsam laborum quasi reiciendis aspernatur suscipit blanditiis quibusdam culpa nisi voluptatum neque ipsum sint eligendi, exercitationem porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae rem cumque eveniet sed molestiae facere, inventore illum et incidunt non nulla ullam, modi, ducimus numquam unde! Animi, eius laboriosam?</p>
+    <script>
+        /*var n1 = window.prompt('digite um número: ')
+        var n2 = window.prompt('digite outro número: ')
+        var s = n1 + n2
+        window.alert('a soma dos dois números é ' + s) é a maneira incorreta de fazer*/
+        var n1 = parseFloat(window.prompt('digite um número: '))
+        var n2 = parseFloat(window.prompt('digite outro número: '))
+        var soma = n1 + n2
+        window.alert('a soma dos dois números é ' + soma + '!')
+        //parseFloat e parseInt são utilizados quando se quer obrigatoriamente um número inteiro ou real
+        //quando pode ser um ou outro utiliza-se só number 
+        var n3 = Number(window.prompt('digite um terceiro número: '))
+        var n4 = Number(window.prompt('digite o quarto número: '))
+        var soma2 = n3 + n4
+        window.alert(`a soma entre ${n3} e ${n4} é igual a ${soma2}`) //template strings 
+        
+    </script>
+</body>
+</html>
