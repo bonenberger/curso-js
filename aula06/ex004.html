@@ -16,6 +16,8 @@
         //toUpperCase() e toLowerCase() são alguns métodos de manipulação de strings
         //para formatação de números se utiliza o toFixed() e dentro dos parenteses coloca-se o número de casas decimais
         //replace('.', ',') para converter o ponto pela vírgula
+        var soma = Number(window.prompt('digite um número: '))
+        document.write(`você digitou ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
     </script>
 </body>
 </html>
