@@ -16,19 +16,21 @@
 </head>
 <body>
     <h1>verificação de nacionalidade</h1>
-    <label for="nac">em que país vc nasceu? </label>
-    <input type="text" name="nac" id="nac">
+    <label for="inac">em que país vc nasceu? </label>
+    <input type="text" name="nac" id="inac">
     <input type="submit" value="enviar" onclick="verificar()">
     <div id="res">
 
     </div>
     <script>
-        var p = document.getElementById("nac");
-        var v = document.getElementById("res");
-        if (p == 'brasil' || p == 'Brasil' || p == 'BRASIL') {
-            res.innerHTML = 'você é brasileiro'
-        } else {
-            res.innerHTML = 'você é extrangeiro'
+        var pais = document.getElementById("inac");
+        var nac = document.getElementById("res");
+        function verificar() {
+            if (pais == 'brasil') {
+                res.innerHTML = 'brasileiro';
+            } else {
+                res.innerHTML = 'extrangeiro';
+            }
         }
     </script>
 </body>
